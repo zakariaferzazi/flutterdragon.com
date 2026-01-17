@@ -60,113 +60,84 @@
 
       <div class="about-content">
         <p style="text-align: center; font-size: 1.2rem; margin-bottom: 2rem;">
-          Have questions, feedback, or suggestions? I'd love to hear from you!
+          Have questions or feedback? Fill out the form below and I'll get back to you within 24-48 hours.
         </p>
 
-        <!-- Contact Cards -->
-        <div class="values-grid" style="margin-top: 2rem;">
-          
-          <!-- Email Card -->
-          <div class="value-card" style="background: linear-gradient(135deg, #f0f9ff, #e0f2fe);">
-            <div class="value-icon">📧</div>
-            <h3>Email</h3>
-            <p style="margin-bottom: 1rem;">Send me an email directly</p>
-            <a href="mailto:zakariaferzazi24.04.2000@gmail.com" 
-               style="color: var(--primary-color); font-weight: 600; word-break: break-word; display: block; margin-top: 1rem;">
+        <!-- Contact Form -->
+        <div class="legal-content" style="max-width: 700px; margin: 0 auto;">
+          <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" style="display: flex; flex-direction: column; gap: 1.5rem;">
+            
+            <div>
+              <label for="name" style="display: block; font-weight: 600; margin-bottom: 0.5rem; color: var(--text-dark);">
+                Name <span style="color: red;">*</span>
+              </label>
+              <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                required 
+                style="width: 100%; padding: 0.75rem; border: 2px solid var(--border-color); border-radius: 6px; font-size: 1rem; font-family: var(--font-primary); background-color: var(--bg-white); color: var(--text-dark);"
+                placeholder="Your name"
+              />
+            </div>
+
+            <div>
+              <label for="email" style="display: block; font-weight: 600; margin-bottom: 0.5rem; color: var(--text-dark);">
+                Email <span style="color: red;">*</span>
+              </label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                required 
+                style="width: 100%; padding: 0.75rem; border: 2px solid var(--border-color); border-radius: 6px; font-size: 1rem; font-family: var(--font-primary); background-color: var(--bg-white); color: var(--text-dark);"
+                placeholder="your.email@example.com"
+              />
+            </div>
+
+            <div>
+              <label for="subject" style="display: block; font-weight: 600; margin-bottom: 0.5rem; color: var(--text-dark);">
+                Subject <span style="color: red;">*</span>
+              </label>
+              <input 
+                type="text" 
+                id="subject" 
+                name="subject" 
+                required 
+                style="width: 100%; padding: 0.75rem; border: 2px solid var(--border-color); border-radius: 6px; font-size: 1rem; font-family: var(--font-primary); background-color: var(--bg-white); color: var(--text-dark);"
+                placeholder="What is this regarding?"
+              />
+            </div>
+
+            <div>
+              <label for="message" style="display: block; font-weight: 600; margin-bottom: 0.5rem; color: var(--text-dark);">
+                Message <span style="color: red;">*</span>
+              </label>
+              <textarea 
+                id="message" 
+                name="message" 
+                required 
+                rows="6"
+                style="width: 100%; padding: 0.75rem; border: 2px solid var(--border-color); border-radius: 6px; font-size: 1rem; font-family: var(--font-primary); resize: vertical; background-color: var(--bg-white); color: var(--text-dark);"
+                placeholder="Tell me more about your question or feedback..."
+              ></textarea>
+            </div>
+
+            <button 
+              type="submit" 
+              class="cta-button" 
+              style="width: 100%; cursor: pointer; font-size: 1.1rem;"
+            >
+              Send Message
+            </button>
+          </form>
+
+          <p style="text-align: center; margin-top: 2rem; color: var(--text-light); font-size: 0.95rem;">
+            Or email directly: 
+            <a href="mailto:zakariaferzazi24.04.2000@gmail.com" style="color: var(--primary-color); font-weight: 600;">
               zakariaferzazi24.04.2000@gmail.com
             </a>
-          </div>
-
-          <!-- General Inquiries -->
-          <div class="value-card" style="background: linear-gradient(135deg, #f0fdf4, #dcfce7);">
-            <div class="value-icon">💬</div>
-            <h3>General Inquiries</h3>
-            <p>Questions about apps, features, or partnerships</p>
-            <a href="mailto:zakariaferzazi24.04.2000@gmail.com?subject=General%20Inquiry" 
-               class="cta-button" 
-               style="display: inline-block; margin-top: 1rem; font-size: 0.9rem; padding: 0.6rem 1.2rem;">
-              Get In Touch
-            </a>
-          </div>
-
-          <!-- Bug Reports -->
-          <div class="value-card" style="background: linear-gradient(135deg, #fef3f2, #fee2e2);">
-            <div class="value-icon">🐛</div>
-            <h3>Bug Reports</h3>
-            <p>Found a bug? Help me improve the apps</p>
-            <a href="mailto:zakariaferzazi24.04.2000@gmail.com?subject=Bug%20Report" 
-               class="cta-button" 
-               style="display: inline-block; margin-top: 1rem; font-size: 0.9rem; padding: 0.6rem 1.2rem;">
-              Report Bug
-            </a>
-          </div>
-
-          <!-- Feature Requests -->
-          <div class="value-card" style="background: linear-gradient(135deg, #faf5ff, #f3e8ff);">
-            <div class="value-icon">💡</div>
-            <h3>Feature Requests</h3>
-            <p>Have an idea? I'm always open to suggestions</p>
-            <a href="mailto:zakariaferzazi24.04.2000@gmail.com?subject=Feature%20Request" 
-               class="cta-button" 
-               style="display: inline-block; margin-top: 1rem; font-size: 0.9rem; padding: 0.6rem 1.2rem;">
-              Suggest Feature
-            </a>
-          </div>
-
-          <!-- Privacy & Legal -->
-          <div class="value-card" style="background: linear-gradient(135deg, #fffbeb, #fef3c7);">
-            <div class="value-icon">🔒</div>
-            <h3>Privacy & Legal</h3>
-            <p>Data deletion requests or privacy concerns</p>
-            <a href="mailto:zakariaferzazi24.04.2000@gmail.com?subject=Privacy%20Inquiry" 
-               class="cta-button" 
-               style="display: inline-block; margin-top: 1rem; font-size: 0.9rem; padding: 0.6rem 1.2rem;">
-              Privacy Request
-            </a>
-          </div>
-
-          <!-- Business -->
-          <div class="value-card" style="background: linear-gradient(135deg, #fdf2f8, #fce7f3);">
-            <div class="value-icon">💼</div>
-            <h3>Business & Press</h3>
-            <p>Media inquiries, partnerships, or collaborations</p>
-            <a href="mailto:zakariaferzazi24.04.2000@gmail.com?subject=Business%20Inquiry" 
-               class="cta-button" 
-               style="display: inline-block; margin-top: 1rem; font-size: 0.9rem; padding: 0.6rem 1.2rem;">
-              Contact
-            </a>
-          </div>
-
-        </div>
-
-        <!-- Response Time Info -->
-        <div class="legal-content" style="margin-top: 3rem; text-align: center;">
-          <h3 style="margin-bottom: 1rem;">⏱️ Response Time</h3>
-          <p style="margin-bottom: 0.5rem;">
-            I typically respond within <strong>24-48 hours</strong> on business days.
           </p>
-          <p style="margin-bottom: 0;">
-            For urgent issues, please use the in-app support feature for faster assistance.
-          </p>
-        </div>
-
-        <!-- FAQ Quick Links -->
-        <div class="text-center" style="margin-top: 3rem;">
-          <h3 class="section-title" style="font-size: 1.8rem;">Looking for Something Specific?</h3>
-          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 1.5rem;">
-            <a href="flutterdragon_privacy_policy.html" class="app-link secondary" style="display: inline-block;">
-              📄 Privacy Policy
-            </a>
-            <a href="terms.html" class="app-link secondary" style="display: inline-block;">
-              📜 Terms of Use
-            </a>
-            <a href="about.html" class="app-link secondary" style="display: inline-block;">
-              👤 About Me
-            </a>
-            <a href="apps.html" class="app-link primary" style="display: inline-block;">
-              📱 View Apps
-            </a>
-          </div>
         </div>
 
       </div>
