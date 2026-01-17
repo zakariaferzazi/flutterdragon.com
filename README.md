@@ -16,11 +16,11 @@ A professional, responsive portfolio website for showcasing mobile applications 
 
 ```
 flutterdragon.com/
-├── index.html          # Home page
-├── apps.html           # Apps showcase page
-├── about.html          # About the developer
-├── privacy.html        # Privacy Policy (App Store/Play Store compliant)
-├── terms.html          # Terms of Use (App Store/Play Store compliant)
+├── index.html                          # Home page
+├── apps.html                           # Apps showcase page
+├── about.html                          # About the developer
+├── flutterdragon_privacy_policy.html   # Privacy Policy (App Store/Play Store compliant)
+├── terms.html                          # Terms of Use (App Store/Play Store compliant)
 ├── css/
 │   └── styles.css      # Main stylesheet with responsive design
 ├── js/
@@ -51,7 +51,7 @@ flutterdragon.com/
 - Contact information
 - Mission statement
 
-### 4. Privacy Policy (`privacy.html`)
+### 4. Privacy Policy (`flutterdragon_privacy_policy.html`)
 **Compliant with Apple & Google requirements**
 - Data collection disclosure
 - Third-party services (AdMob, Firebase/Analytics)
