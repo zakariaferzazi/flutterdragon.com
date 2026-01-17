@@ -19,6 +19,7 @@ flutterdragon.com/
 ├── index.html                          # Home page
 ├── apps.html                           # Apps showcase page
 ├── about.html                          # About the developer
+├── contact.html                        # Contact page
 ├── flutterdragon_privacy_policy.html   # Privacy Policy (App Store/Play Store compliant)
 ├── terms.html                          # Terms of Use (App Store/Play Store compliant)
 ├── css/
@@ -116,7 +117,7 @@ Edit `apps.html` to add/modify your apps:
 ```
 
 ### Update Contact Email
-Replace all instances of `contact@flutterdragon.com` with your email:
+Replace all instances of `zakariaferzazi24.04.2000@gmail.com` with your email:
 - In all HTML files
 - In Privacy Policy
 - In Terms of Use
@@ -292,7 +293,7 @@ Consider adding:
 ## 📧 Support & Contact
 
 For questions about this website template:
-- Email: contact@flutterdragon.com
+- Email: zakariaferzazi24.04.2000@gmail.com
 - Website: https://flutterdragon.com
 
 ## 📜 License
